@@ -1,0 +1,45 @@
+---
+title: "hw1"
+format: html
+editor: visual
+---
+
+# First, write test to answer the question:
+
+∗ What do you think being a data scientist is about?
+
+Being a data scientist is about extracting meaningful insights from data to solve problems and support decision-making. This involves collecting, cleaning, and analyzing data, building predictive models, and effectively communicating findings to stakeholders. It requires a blend of statistical knowledge, programming skills, and domain expertise.
+
+∗ What differences/similarities do you see between data scientists and statisticians?
+
+Data scientists and statisticians both analyze data to extract insights and inform decision-making. However, data scientists often work with larger and more varied datasets, use advanced programming and machine learning techniques, and handle the entire data pipeline. Statisticians focus more on the theoretical aspects of statistics and hypothesis testing, using traditional statistical methods and software.
+
+∗ How do you view yourself in relation to these two areas?
+
+I think I am more of a statistician than a data scientist.
+
+## Second, include a section with the following R code:
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+y <- density(iris$Sepal.Length)
+```
+
+∗ Create an R code chunk to determine the class, type, and structure of the object y ∗ Create an R code chunk that uses the plot function on y. Hide the R code in the final document by setting echo to false. ∗ Include some markdown test between these code chunks explaining what you are doing with the R code
+
+```{r}
+class(y)
+```
+
+```{r}
+typeof(y)
+```
+
+```{r}
+str(y)
+```
+
+```{r, echo=FALSE}
+plot(y)
+```
